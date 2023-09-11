@@ -27,14 +27,14 @@ namespace Movie_MVC.Models
             {
                 while (dr.Read())
                 {
-                    Movie m = new Movie();
+                   Movie m = new Movie();
                    m.Id = Convert.ToInt32(dr["id"]);
                    m.Title = dr["title"].ToString();
                    m.ReleaseDate = Convert.ToDateTime(dr["release_date"]);
                    m.MovieType = dr["movie_type"].ToString();
                    m.StarName = dr["star_name"].ToString();
                    m.isActive = Convert.ToInt32(dr["isActive"]);
-                    list.Add(m);
+                   list.Add(m);
 
 
                 }
